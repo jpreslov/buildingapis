@@ -1,0 +1,14 @@
+{
+  "name": "buildingapis",
+  "version": "1.0.0",
+  "description": "* Setup an API with a project structure like:",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
