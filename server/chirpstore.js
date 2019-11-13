@@ -21,6 +21,7 @@ let createChirp = (chirp) => {
 let updateChirp = (id, chirp) => {
     chirps[id] = chirp;
     writeChirps();
+
 }
 
 let deleteChirp = id => {

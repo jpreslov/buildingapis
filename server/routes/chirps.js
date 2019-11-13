@@ -4,7 +4,6 @@ const cors = require('cors');
 const router = express.Router();
 
 router.get('/:id?', (req, res) => {
-
     //for if user requests specific chirp
     if (req.params.id){
         res.send(chirpStore.GetChirp(req.params.id))
@@ -19,13 +18,14 @@ router.post('/', (req, res) => {
     res.sendStatus(200)
 })
 
-router.put('/', (req, res) => {
-    console.log(req.params.id)
-    chirpStore.UpdateChirp()
+router.put('/:id', (req, res) => {
+    console.log();
+    chirpStore.UpdateChirp(req.params.id, req.body)
 })
 
-router.delete('/', (req, res) => {
-    chirpsStore.DeleteChirp(res.body)
+router.delete('/:id', (req, res) => {
+    // console.log(req.params.id)
+    chirpStore.DeleteChirp(req.params.id)
 })
 
 module.exports = router;
