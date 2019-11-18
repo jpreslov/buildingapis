@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "* Setup an API with a project structure like:",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "nodemon ./server/server.js"
   },
   "author": "",
   "license": "ISC",
